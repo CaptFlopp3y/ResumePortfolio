@@ -4,6 +4,7 @@ import ContactPage from './pages/contactPage';
 import HomePage from './pages/homePage';
 import ProjectPage from './pages/projectPage';
 import AppNavbar from "./components/appNavbar";
+import AppFooter from "./components/appFooter";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path='/projects' element={<ProjectPage />} />
         <Route path='*' element={<h1 className='display-2'>Wrong page!</h1>} />
       </Routes>
+      <AppFooter />
     </Router>
   );
 }
