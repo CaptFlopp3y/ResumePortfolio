@@ -2,12 +2,13 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { NavLink } from "react-router-dom";
 
 const AppNavbar = () => {
     return (
         <header><Navbar expand={'lg'} className="bg-body-tertiary mb-3">
             <Container fluid>
-                <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+                <Navbar.Brand href="#">Fabian Barranco Portfolio</Navbar.Brand>
                 <Navbar.Toggle aria-controls={`offcanvasNavbar-expand`} />
                 <Navbar.Offcanvas
                     id={`offcanvasNavbar-expand`}
@@ -16,13 +17,14 @@ const AppNavbar = () => {
                 >
                     <Offcanvas.Header closeButton>
                         <Offcanvas.Title id={`offcanvasNavbarLabel-expand`}>
-                            Offcanvas
+                            Menu
                         </Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                         <Nav className="justify-content-end flex-grow-1 pe-3">
-                            <Nav.Link href="#action1">Home</Nav.Link>
-                            <Nav.Link href="#action2">Link</Nav.Link>
+                            <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
+                            <Nav.Link as={NavLink} to='/contactme'>Contact Page</Nav.Link>
+                            <Nav.Link as={NavLink} to='/projects'>Projects</Nav.Link>
                         </Nav>
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
