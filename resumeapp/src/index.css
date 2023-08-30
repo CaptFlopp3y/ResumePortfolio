@@ -11,8 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+.footer-items {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--sage);
+}
+
 .projectImg {
   height: 250px;
+  width: 100%;
+}
+
+.selfPhoto {
+  height: 300px;
   width: 100%;
 }
 
@@ -31,6 +44,12 @@ code {
   text-align: left;
   border-radius: 25px;
   height: 500px;
+}
+
+.NavBarMain {
+  background-color: #2196F3;
+  color: greenyellow;
+
 }
 
 @media screen and (min-width: 768px) {

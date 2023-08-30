@@ -6,9 +6,12 @@ import { NavLink } from "react-router-dom";
 
 const AppNavbar = () => {
     return (
-        <header><Navbar expand={'lg'} className="bg-body-tertiary mb-3">
+        <header><Navbar expand={'lg'} className="NavBarMain">
             <Container fluid>
-                <Navbar.Brand href="#">Fabian Barranco Portfolio</Navbar.Brand>
+                <Navbar.Brand href="#">
+                    <h2>Fabian Barranco Portfolio</h2>
+
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls={`offcanvasNavbar-expand`} />
                 <Navbar.Offcanvas
                     id={`offcanvasNavbar-expand`}

@@ -1,14 +1,18 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
+import selfPhoto from '../assets/DSC5940.jpg'
+import Image from 'react-bootstrap/Image';
 
 const HomePage = () => {
     return (
         <Container>
             <Row>
                 <Col>
-                    <header>Full Stack Developer</header>
+                    <header>
+                        <h3>Full Stack Developer</h3>
+                    </header>
+                    <Image className='selfPhoto' src={selfPhoto} />
                 </Col>
                 <Col>
                     <p>
