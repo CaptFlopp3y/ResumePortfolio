@@ -9,7 +9,7 @@ const AppNavbar = () => {
         <header><Navbar expand={'lg'} className="NavBarMain">
             <Container fluid>
                 <Navbar.Brand href="#">
-                    <h2>Fabian Barranco Portfolio</h2>
+                    <h2>Fabian Barranco</h2>
 
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls={`offcanvasNavbar-expand`} />
